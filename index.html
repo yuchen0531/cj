@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>welcome</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha512-M+qMI1PHRcYcOpJzeJlaWbVVx2JJyPIwZas8or7dc97LZOokjvbpfRxymhVtlJLyjiF3wGyr0FJOA4DLONLVLw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+  <style>
+    .home{
+      background-color: rgb(255, 255, 255);
+      height: 100vh;
+      width: 100%;
+      min-width: 320px;
+    }
+    .container{
+    }
+    .h8{
+      font-size: 1.5rem;
+    }
+    .h7{
+      font-size: 1.375rem;
+    }
+    .h6{
+      font-size: 1.25rem;
+    }
+    .h5{
+      font-size: 1.125rem;
+    }
+    .h4{
+      font-size: 1rem;
+    }
+    .h3{
+      font-size: 0.875rem;
+    }
+    .h2{
+      font-size: 0.75rem;
+    }
+    .header {
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      border-bottom: #d6d4d5 1px solid;
+      border-top: #d4d4d4 6px solid;
+      height: 75px;
+      margin: 0;
+      padding: 0 15px;
+      color: #333;
+    }
+    .cursor-point{
+      cursor: pointer;
+    }
+    .header img {
+      height: 35px;
+      width: auto;
+      margin: 9px auto 0 auto;
+      float: none;
+    }
+    .wrap {
+      /* max-width: 850px; */
+      margin: 0 auto;
+      width: 100%;
+    }
+    .input-frame{
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid #a7a7a7;
+      width: fit-content;
+    }
+    .input-frame input{
+      width: 160px;
+      outline: none;
+      border: none;
+      background: transparent;
+    }
+    .btn{
+      max-width: 350px;
+      color: #fff;
+      background-color: #23a2c5;
+      border-color: #23a2c5;
+    }
+    .btn-click{
+      cursor: pointer;
+    }
+    @media only screen and (min-width: 600px) {
+    .h8{
+      font-size: 1.875rem;
+    }
+    .h7{
+      font-size: 1.75rem;
+    }
+    .h6{
+      font-size: 1.5rem;
+    }
+    .h5{
+      font-size: 1.375rem;
+    }
+    .h4{
+      font-size: 1.25rem;
+    }
+    .h3{
+      font-size: 1.125rem;
+    }
+    .h2{
+      font-size: 1rem;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="home">
+    <div class="header">
+      <div class="wrap">
+        <img src="https://uupon.tw/images/logo.svg" height="50px"><br>
+        <p class="h3">│ 會員註冊 │</p>
+      </div>
+    </div>
+    <div class="text-center d-flex justify-content-center">
+      <div>
+        <p class="text-black-50 font-weight-bold h7 mb-1 mt-5">新手會員專屬好康!</p>
+        <p class="text-danger font-weight-bold h4 mb-0">加入康健人壽賺40點!</p>
+        <p class="text-danger font-weight-bold h4 mb-3">填寫資料即可獲得點數及好康活動訊息!</p>
+        <form>
+          <div class="input-frame mb-2 mx-auto">
+            <span class="h5 font-weight-bold">姓名 </span><input type="text" id="name" name="name"><br>
+          </div>
+          <div class="input-frame mb-2 mx-auto">
+            <span class="h5 font-weight-bold">生日 </span><input id="date" type="date"><br>
+          </div>
+        </form>
+        <div class="d-flex justify-content-center align-items-center">
+          <input type="checkbox" id="earn"><span class="h3 mb-0">我想獲得更多保障建議</span>
+        </div>
+        <span class="text-danger h3 d-none" id="notice">*請先填寫姓名、生日</span>
+        <div class="mt-5 px-5">
+          <p class="h3">點選&lt;完成&gt;則表示已閱讀並同意<u><a target="_blank" href="https://bit.ly/3dEA74B">本活動注意事項</a></u>、<u><a target="_blank" href="https://www.cigna.com.tw/leadform/clause/privacy.php">康健人壽個資條款</a></u>及送出資料</p>
+        </div>
+        <div data-action="submit" class="btn-click w-75 mx-5 btn my-2 h4 py-2">完成</div><br>
+        <div data-action="reject" class="btn-click w-75 mx-5 btn mb-2 h4 py-2">我想先看看其他賺點活動</div><br>
+        <p data-action="cancel" class="btn-click mx-auto"><u>略過,前往首頁</u></p>
+        <input type="hidden" name="returnURL" value="wwwww">
+        <!-- <a href="javascript:history.go(-1)" class="header-back jsBack">返回</a> -->
+      </div>
+    </div>
+  </div>
+  <script>
+    console.log(document.querySelector('input[name="returnURL"]').value)
+    let returnURL = document.querySelector('input[name="returnURL"]').value
+    let allbtn = document.querySelectorAll('.btn-click')
+    allbtn.forEach(item => {
+      item.addEventListener('click', function btnclick(){
+        let nameVal = document.querySelector('#name').value
+        let dateVal = document.querySelector('#date').value
+        let earn = document.querySelector('#earn').checked
+        console.log(item.dataset.action, nameVal, dateVal, earn)
+        if  (item.dataset.action === 'submit' && (nameVal === '' || dateVal === '')) {
+          console.log('填寫姓名及生日')
+          document.querySelector('#notice').classList.remove('d-none')
+          return
+        }
+        // 測試
+        switch(item.dataset.action) {
+          case 'submit':
+            console.log('111')
+            break
+          case 'reject':
+            console.log('111222')
+            break
+          case 'cancel':
+            console.log('1113333')
+            break
+          default:
+            break
+        }
+        fetch('https://yuchen0531.github.io/wordcard/static/word.json', {
+          method:'GET',
+          // body:encodeURI(JSON.stringify({
+          //   name:'oxxo',
+          //   age:18
+          // })),
+          // headers: {
+          //   'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8'
+          // }
+        })
+        .then(res => {
+            return res.json()
+        }).then(result => {
+            console.log(result.data[0])
+        })
+      })
+    })
+  </script>
+</body>
+</html>
+
